@@ -1,0 +1,9 @@
+/* Identidad XeryzTech: azul noche + cian eléctrico. Cambia los valores aquí y se actualiza toda la web. */
+:root{
+  color-scheme:dark;
+  --bg:#050D1C; --bg-2:#08172B; --card:#0B1C32; --line:#173252;
+  --cyan:#36E7F6; --blue:#08B9E8;
+  --text:#F3F8FF; --muted:#9EB0C7;
+  --font:"Segoe UI Variable Display","Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --w:72rem; --gap:clamp(1.1rem,4vw,2rem); --sec:clamp(3.5rem,8vw,6rem);
+}

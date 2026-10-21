@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitar presupuesto | XeryzTech</title>
+<meta name="description" content="Cuéntanos qué le ocurre a tu equipo y te preparamos un presupuesto. Sin compromiso hasta que lo aceptes.">
+<meta name="theme-color" content="#050D1C">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="XeryzTech">
+<meta property="og:title" content="Solicitar presupuesto | XeryzTech">
+<meta property="og:description" content="Cuéntanos qué le ocurre a tu equipo y te preparamos un presupuesto. Sin compromiso hasta que lo aceptes.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/variables.css">
+<link rel="stylesheet" href="/css/global.css">
+<link rel="stylesheet" href="/css/components.css">
+<link rel="stylesheet" href="/css/pages.css">
+<script src="/js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header class="site-header">
+<div class="container header__inner">
+<a class="brand" href="/" aria-label="XeryzTech, ir al inicio"><img src="/assets/logo/xeryztech-marca-provisional.svg" alt="" width="36" height="36"><span>Xeryz<b>Tech</b></span></a>
+<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menú</span></button>
+<nav class="nav" id="menu" aria-label="Principal">
+<ul>
+<li><a href="/servicios/">Servicios</a></li>
+<li><a href="/tarifas/">Tarifas</a></li>
+<li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+<li><a href="/faq/">FAQ</a></li>
+<li><a href="/contacto/">Contacto</a></li>
+<li><a class="btn btn--sm" href="/presupuesto/" aria-current="page">Solicitar presupuesto</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+
+<main id="contenido"><section class="section"><div class="container prose">
+<h1>Solicitar presupuesto</h1>
+<p class="lead">Cuéntanos tu caso. Al enviar, se abrirá tu programa de correo con la solicitud ya redactada.</p>
+<form id="presupuesto" novalidate data-email="[PENDIENTE: email]">
+<div class="campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" aria-describedby="e-nombre"><p class="error" id="e-nombre" role="alert"></p></div>
+<div class="campo"><label for="contacto">Correo o teléfono de contacto</label><input id="contacto" name="contacto" autocomplete="email" aria-describedby="e-contacto"><p class="error" id="e-contacto" role="alert"></p></div>
+<div class="campo"><label for="preferencia">Preferencia de contacto</label><select id="preferencia" name="preferencia"><option>Correo electrónico</option><option>Teléfono</option><option>Indiferente</option></select></div>
+<div class="campo"><label for="equipo">Tipo de equipo</label><select id="equipo" name="equipo" aria-describedby="e-equipo"><option value="">Elige una opción</option><option>Sobremesa</option><option>Portátil</option><option>Otro (indícalo en la descripción)</option></select><p class="error" id="e-equipo" role="alert"></p></div>
+<div class="campo"><label for="modelo">Marca y modelo <span class="muted">(opcional)</span></label><input id="modelo" name="modelo"></div>
+<div class="campo"><label for="servicio">Servicio solicitado</label><select id="servicio" name="servicio" aria-describedby="e-servicio"><option value="">Elige una opción</option><option value="mantenimiento">Mantenimiento informático</option><option value="limpieza">Limpieza y mantenimiento físico</option><option value="optimizacion">Optimización de equipos</option><option value="actualizaciones">Ampliaciones y actualizaciones de hardware</option><option value="software">Instalación, configuración y soporte de software</option><option value="orientacion">No lo sé, necesito orientación</option></select><p class="error" id="e-servicio" role="alert"></p></div>
+<div class="campo"><label for="incidencia">Qué ocurre con tu equipo</label><textarea id="incidencia" name="incidencia" rows="5" aria-describedby="e-incidencia"></textarea><p class="ayuda">Qué pasa, desde cuándo y si ha habido cambios recientes.</p><p class="error" id="e-incidencia" role="alert"></p></div>
+<div class="campo"><div class="check"><input type="checkbox" id="privacidad" name="privacidad" aria-describedby="e-privacidad"><label for="privacidad">He leído la <a href="/legal/privacidad/">política de privacidad</a> y acepto que se usen estos datos para responder a mi solicitud.</label></div><p class="error" id="e-privacidad" role="alert"></p></div>
+<button class="btn" type="submit">Preparar correo con la solicitud</button>
+<p id="salida" role="status"></p>
+<noscript><p class="nota-borrador">Sin JavaScript no podemos preparar el correo por ti. Escríbenos a <span class="pend">[PENDIENTE: email]</span> con los mismos datos.</p></noscript>
+</form>
+</div></section></main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="footer__grid">
+<div>
+<a class="brand" href="/" aria-label="XeryzTech, ir al inicio"><img src="/assets/logo/xeryztech-marca-provisional.svg" alt="" width="36" height="36"><span>Xeryz<b>Tech</b></span></a>
+<p class="muted">Servicios informáticos. Un proyecto que arranca en Jerez de la Frontera.</p>
+<a class="btn btn--sm" href="/presupuesto/">Solicitar presupuesto</a>
+</div>
+<nav aria-label="Servicios"><h2>Servicios</h2><ul>
+<li><a href="/servicios/mantenimiento/">Mantenimiento informático</a></li>
+<li><a href="/servicios/limpieza/">Limpieza y mantenimiento físico</a></li>
+<li><a href="/servicios/optimizacion/">Optimización de equipos</a></li>
+<li><a href="/servicios/actualizaciones/">Ampliaciones y actualizaciones de hardware</a></li>
+<li><a href="/servicios/software/">Instalación, configuración y soporte de software</a></li>
+</ul></nav>
+<nav aria-label="XeryzTech"><h2>XeryzTech</h2><ul>
+<li><a href="/sobre-nosotros/">Sobre nosotros</a></li>
+<li><a href="/tarifas/">Tarifas</a></li>
+<li><a href="/faq/">Preguntas frecuentes</a></li>
+<li><a href="/contacto/">Contacto</a></li>
+</ul></nav>
+<nav aria-label="Información legal"><h2>Legal</h2><ul>
+<li><a href="/legal/aviso-legal/">Aviso legal</a></li>
+<li><a href="/legal/privacidad/">Política de privacidad</a></li>
+<li><a href="/legal/cookies/">Política de cookies</a></li>
+</ul></nav>
+</div>
+<p class="footer__legal">© 2026 XeryzTech. Todos los derechos reservados.</p>
+</div>
+</footer>
+
+<script src="/js/navigation.js" defer></script>
+<script src="/js/forms.js" defer></script>
+</body>
+</html>

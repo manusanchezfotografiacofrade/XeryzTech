@@ -1,0 +1,18 @@
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:400 1rem/1.65 var(--font);overflow-x:hidden}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{line-height:1.15;margin:0 0 .6em;font-weight:700;letter-spacing:-.02em}
+h1{font-size:clamp(2.1rem,5.5vw,3.7rem);font-weight:800;letter-spacing:-.04em}
+h2{font-size:clamp(1.6rem,3.6vw,2.3rem)}
+h3{font-size:1.15rem;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:var(--cyan);text-underline-offset:.2em}
+a:hover{color:#fff}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px;border-radius:4px}
+.container{width:min(100% - 2*var(--gap),var(--w));margin-inline:auto}
+.section{padding-block:var(--sec)}
+.muted{color:var(--muted)}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:100;padding:.6rem 1rem;border-radius:8px;background:var(--cyan);color:#041018;font-weight:700}
+.skip:focus{top:1rem}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
